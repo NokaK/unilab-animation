@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 920px;
+    width: 100%;
+    margin: 20px auto;
+    background : rgb(106, 116, 136);
+    text-align: center;
+    position: relative;
+}
+.container:hover {
+    background: sienna;
+}
+/* .container:hover .box {
+    height: 400px;
+} */
+.box {
+    height: 100px;
+    width: 100px;
+   
+    position:absolute;
+    animation-name: boxMove;
+    animation-duration: 0.9s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear;
+    /* transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; */
+}
+/* .box:hover{
+    background-color: sandybrown;
+    width: 600px;
+} */
+p{
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+/* p:hover {
+    font-size: 20px;
+    color:rgb(115, 32, 148);
+} */
+
+@keyframes boxMove {
+    0% {
+        left : 0;
+        top: 0;
+        background-color: rosybrown;
+    }
+    20%{
+        left: 100px;
+        top: 100px;
+        background-color: rgb(180, 28, 28);
+    }
+    40% {
+        left: 150px;
+        top: 150px;
+        background-color: rgb(187, 176, 28);
+        /* transform: rotate(45deg);
+        width: 250px; */
+
+    }
+    60% {
+        left: 200px;
+        top: 200px;
+        background-color: rgb(2, 8, 1);
+    }
+    80%{
+        left: 250px;
+        top: 250px;
+        background-color: rgb(143, 153, 188);
+    }
+    100% {
+        left: 300px;
+        top: 300px;
+        background-color: rgb(30, 233, 74);
+    }
+}
